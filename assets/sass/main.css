@@ -302,12 +302,12 @@ p {
   top: 60px;
 }
 
-.teacher_details p {
+.__details p {
   color: #050505;
   font-size: 18px;
   font-weight: 600;
 }
-.teacher_details span {
+.__details span {
   color: #636363;
   font-size: 15px;
   font-weight: 500;
