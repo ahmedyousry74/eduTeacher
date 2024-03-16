@@ -223,7 +223,7 @@
           class="header__page d-flex justify-content-between align-items-start flex-row flex-wrap w-100"
         >
           <div class="title_page">
-            <h2>الطلاب</h2>
+            <h2>إضافة تعليق إلى طالب</h2>
             <nav>
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -239,144 +239,13 @@
             </nav>
           </div>
         </div>
-        <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
-          <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
-            <div class="d-flex justify-content-start align-items-start flex-column gap-1">
-              <label for=""> المراحل الدراسية </label>
-              <select
-                name="class"
-                id="class"
-                class="form-select form-control"
-                aria-label="Default select example"
-                aria-placeholder="Segmentation*"
-              >
-                <option selected disabled>المراحل الدراسية</option>
-                <option value="">مرحلة 1</option>
-                <option value="">مرحلة 2</option>
-                <option value="">مرحلة 3</option>
-                <option value="">مرحلة 4</option>
-              </select>
-            </div>
-            <div class="d-flex justify-content-start align-items-start flex-column gap-1">
-              <label for=""> الفصول الدراسية </label>
-              <select
-                name="class"
-                id="class"
-                class="form-select form-control"
-              >
-                <option selected disabled>الفصول الدراسية</option>
-                <option value="test">فصل 1</option>
-                <option value="">فصل 2</option>
-                <option value="">فصل 3</option>
-                <option value="">فصل 4</option>
-              </select>
-            </div>
-            <div class="d-flex justify-content-start align-items-start flex-column gap-1">
-              <label for=""> الشعب </label>
-              <select
-                name="category1"
-                id="category1"
-                class="form-select form-control"
-              >
-                <option selected disabled>الشعب</option>
-                <option value="test">شعبة 1</option>
-                <option value="">شعبة 2</option>
-                <option value="">شعبة 3</option>
-                <option value="">شعبة 4</option>
-              </select>
-            </div>
-          </div>
-          <div class="filter_btn">
-            <button type="submit"> فلتر </button>
-          </div>
-        </form>
-          <table id="studentsTable" class="display" style="width: 100%">
-            <thead>
-              <tr>
-                <th>تحديد</th>
-                <th>الرقم</th>
-                <th>الصورة</th>
-                <th>الإسم</th>
-                <th>الموبايل</th>
-                <th>الفصل الدراسي</th>
-                <th>المرحلة الدراسية</th>
-                <th> الشعبة الدراسية </th>
-                <th> الحالة </th>
-                <th> إضافة تعليق </th>
-                <th> إضافة رسالة </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td> <input type="checkbox"> </td>
-                <td>1</td>
-                <td> <img src="../../assets/images/avatar.png" alt="avatar" height="80" width="80"> </td>
-                <td class="name_">
-                  <a href="./stuedent-details.html"> أحمد يسري </a>
-                </td>
-                <td>0123456789</td>
-                <td>فصل 1</td>
-                <td>المرحلة الثانية</td>
-                <td>الشعبة الثانية</td>
-                <td> 
-                    <span class="status active"> نشط  </span>
-                </td>
-                <td> <a href="./add-comment.html"> <img src="../../assets/images/message-square-01.svg" alt=""> </a> </td>
-                <td> <a href="./message-to-student.html"> <img src="../../assets/images/message-plus-circle.svg" alt=""> </a> </td>
-              </tr>
-              <tr>
-                <td> <input type="checkbox"> </td>
-                <td>1</td>
-                <td> <img src="../../assets/images/avatar.png" alt="avatar" height="80" width="80"> </td>
-                <td class="name_">
-                  <a href="./stuedent-details.html"> أحمد يسري </a>
-                </td>
-                <td>0123456789</td>
-                <td>فصل 1</td>
-                <td>المرحلة الثانية</td>
-                <td>الشعبة الثانية</td>
-                <td> 
-                  <span class="status stopped"> موقوف  </span>
-              </td> 
-              <td> <a href="./add-comment.html"> <img src="../../assets/images/message-square-01.svg" alt=""> </a> </td>
-              <td> <a href="./message-to-student.html"> <img src="../../assets/images/message-plus-circle.svg" alt=""> </a> </td>
-              </tr>
-              <tr>
-                <td> <input type="checkbox"> </td>
-                <td>1</td>
-                <td> <img src="../../assets/images/avatar.png" alt="avatar" height="80" width="80"> </td>
-                <td class="name_">
-                  <a href="./stuedent-details.html"> أحمد يسري </a>
-                </td>
-                <td>0123456789</td>
-                <td>فصل 1</td>
-                <td>المرحلة الثانية</td>
-                <td>الشعبة الثانية</td>
-                <td> 
-                  <span class="status disconnected"> مفصول  </span>
-                </td>
-                <td> <a href="./add-comment.html"> <img src="../../assets/images/message-square-01.svg" alt=""> </a> </td>
-                <td> <a href="./message-to-student.html"> <img src="../../assets/images/message-plus-circle.svg" alt=""> </a> </td>
-              </tr>
-              <tr>
-                <td> <input type="checkbox"> </td>
-                <td>1</td>
-                <td> <img src="../../assets/images/avatar.png" alt="avatar" height="80" width="80"> </td>
-                <td class="name_">
-                  <a href="./stuedent-details.html"> أحمد يسري </a>
-                </td>
-                <td>0123456789</td>
-                <td>فصل 1</td>
-                <td>المرحلة الثانية</td>
-                <td>الشعبة الثانية</td>
-                <td> 
-                  <span class="status not_pay"> لم يسدد  </span>
-              </td>
-              <td> <a href="./add-comment.html"> <img src="../../assets/images/message-square-01.svg" alt=""> </a> </td>
-              <td> <a href="./message-to-student.html"> <img src="../../assets/images/message-plus-circle.svg" alt=""> </a> </td>
-            </tr>
-            </tbody>
-          </table>
+        <div class="w-100 replay__messages"> 
+          <span> تعليق </span>
+          <form action="" class="w-100 mt-4">
+              <textarea name="" id="" class="w-100" cols="50" row="100" style="height:200px"></textarea>
+              <button> إرسال </button>
+          </form>
+      </div>
       </div>
     </div>
 
@@ -387,7 +256,7 @@
 
     <script>
       $(document).ready(function () {
-        var table = $("#studentsTable").DataTable({
+        var table = $("#example").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
             "<'row'<'col-sm-12 table_layout'tr>>" +
