@@ -240,6 +240,57 @@
           </div>
         </div>
         <div class="w-100">
+          <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
+            <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
+              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                <label for=""> المراحل الدراسية </label>
+                <select
+                  name="class"
+                  id="class"
+                  class="form-select form-control"
+                  aria-label="Default select example"
+                  aria-placeholder="Segmentation*"
+                >
+                  <option selected disabled>المراحل الدراسية</option>
+                  <option value="">مرحلة 1</option>
+                  <option value="">مرحلة 2</option>
+                  <option value="">مرحلة 3</option>
+                  <option value="">مرحلة 4</option>
+                </select>
+              </div>
+              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                <label for=""> الفصول الدراسية </label>
+                <select
+                  name="class"
+                  id="class"
+                  class="form-select form-control"
+                >
+                  <option selected disabled>الفصول الدراسية</option>
+                  <option value="test">فصل 1</option>
+                  <option value="">فصل 2</option>
+                  <option value="">فصل 3</option>
+                  <option value="">فصل 4</option>
+                </select>
+              </div>
+              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                <label for=""> الشعب </label>
+                <select
+                  name="category1"
+                  id="category1"
+                  class="form-select form-control"
+                >
+                  <option selected disabled>الشعب</option>
+                  <option value="test">شعبة 1</option>
+                  <option value="">شعبة 2</option>
+                  <option value="">شعبة 3</option>
+                  <option value="">شعبة 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter_btn">
+              <button type="submit"> فلتر </button>
+            </div>
+          </form>
           <table id="materialsTable" class="display" style="width: 100%">
             <thead>
               <tr>
