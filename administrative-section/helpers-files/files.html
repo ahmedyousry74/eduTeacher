@@ -223,7 +223,7 @@
           class="header__page d-flex justify-content-between align-items-start flex-row flex-wrap w-100"
         >
           <div class="title_page">
-            <h2>ملقات المساعدة</h2>
+            <h2>الملفات المساعدة</h2>
             <nav>
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -233,13 +233,104 @@
                   القسم الإداري
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  ملقات المساعدة
+                  الملفات المساعدة
                 </li>
               </ol>
             </nav>
           </div>
         </div>
-        <h1> ملقات المساعدة </h1>
+        <div class="w-100">
+          <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
+            <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
+              
+              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                <label for=""> المراحل الدراسية </label>
+                <select
+                  name="class"
+                  id="class"
+                  class="form-select form-control"
+                  aria-label="Default select example"
+                  aria-placeholder="Segmentation*"
+                >
+                  <option selected disabled>المراحل الدراسية</option>
+                  <option value="">مرحلة 1</option>
+                  <option value="">مرحلة 2</option>
+                  <option value="">مرحلة 3</option>
+                  <option value="">مرحلة 4</option>
+                </select>
+              </div>
+              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                <label for=""> الفصول الدراسية </label>
+                <select
+                  name="class"
+                  id="class"
+                  class="form-select form-control"
+                >
+                  <option selected disabled>الفصول الدراسية</option>
+                  <option value="test">فصل 1</option>
+                  <option value="">فصل 2</option>
+                  <option value="">فصل 3</option>
+                  <option value="">فصل 4</option>
+                </select>
+              </div>
+              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                <label for="">الشعبة </label>
+                <select
+                  name="class"
+                  id="class"
+                  class="form-select form-control"
+                >
+                  <option selected disabled>الشعبة</option>
+                  <option value="test">شعبة 1</option>
+                  <option value="">شعبة 2</option>
+                  <option value="">شعبة 3</option>
+                  <option value="">شعبة 4</option>
+                </select>
+              </div>
+              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+                <label for="">المادة </label>
+                <select
+                  name="class"
+                  id="class"
+                  class="form-select form-control"
+                >
+                  <option selected disabled>المادة</option>
+                  <option value="test">مادة 1</option>
+                  <option value="">مادة 2</option>
+                  <option value="">مادة 3</option>
+                  <option value="">مادة 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter_btn">
+              <button type="submit"> فلتر </button>
+            </div>
+          </form>
+          <table id="helpersTable" class="display" style="width: 100%">
+            <thead>
+              <tr>
+                <th>اسم المادة المساعدة</th>
+                <th>تاريخ الأنشاء</th>
+                <th>مرحلة دراسية</th>
+                <th>فصل دراسي</th>
+                <th>الشعبة</th>
+                <th>تحميل</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>مادة مساعدة</td>
+                <td>27-11-2020</td>
+                <td>مرحلة دراسية 1</td>
+                <td>فصل دراسي 1</td>
+                <td>شعبة 1</td>
+                <td class="actions">
+                  <button > <img src="../../assets/images/download.svg" alt="trash" width="24" height="24" loading="lazy"> </button>
+                </td>                        
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -250,7 +341,7 @@
 
     <script>
       $(document).ready(function () {
-        var table = $("#example").DataTable({
+        var table = $("#helpersTable").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
             "<'row'<'col-sm-12 table_layout'tr>>" +
