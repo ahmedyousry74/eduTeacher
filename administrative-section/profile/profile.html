@@ -68,10 +68,10 @@
                 <div class="accordion-body">
                   <ul>
                     <li>
-                      <a href="../profile/profile.html"> الحساب الشخصي </a>
+                      <a href="../profile/profile.html" class="active"> الحساب الشخصي </a>
                     </li>
                     <li>
-                      <a href="../students/students.html" class="active"> الطلاب </a>
+                      <a href="../students/students.html"> الطلاب </a>
                     </li>
                     <li>
                       <a href="../materials/materials.html"> المواد </a>
@@ -130,122 +130,173 @@
         </div>
       </aside>
       <div
-        class="wrraper_page d-flex justify-content-start align-items-start flex-column w-100"
+      class="wrraper_page d-flex justify-content-start align-items-start flex-column w-100"
+    >
+      <div
+        class="header__dahsboard d-flex justify-content-between flex-row align-items-center w-100 flex-wrap gap-2"
       >
         <div
-          class="header__dahsboard d-flex justify-content-between flex-row align-items-center w-100 flex-wrap gap-2"
+          class="right__btns d-flex justify-content-start flex-row align-items-center"
         >
-          <div
-            class="right__btns d-flex justify-content-start flex-row align-items-center"
-          >
-            <a href="">
-              <img
-                src="../../assets/images/message.svg"
-                alt="chat"
-                width="23"
-                height="23"
-                loading="lazy"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../../assets/images/mail.svg"
-                alt="chat"
-                width="23"
-                height="23"
-                loading="lazy"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../../assets/images/task.svg"
-                alt="chat"
-                width="23"
-                height="23"
-                loading="lazy"
-              />
-            </a>
-          </div>
-          <div
-            class="left__btns d-flex justify-content-start flex-row align-items-center"
-          >
-            <a href="">
-              <img
-                src="../../assets/images/mirroring-screen.svg"
-                alt="chat"
-                width="40"
-                height="40"
-                loading="lazy"
-              />
-            </a>
-            <div class="input-group">
-              <span class="input-group-text" id="basic-addon1">
-                <img src="../../assets/images/search-md.svg" alt="search" width="20" height="20" loading="lazy"/>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="بحث"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <a href="">
-              <img
-                src="../../assets/images/notification.svg"
-                alt="chat"
-                width="40"
-                height="40"
-                loading="lazy"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../../assets/images/profile.svg"
-                alt="chat"
-                width="40"
-                height="40"
-                loading="lazy"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../../assets/images/setting.svg"
-                alt="chat"
-                width="40"
-                height="40"
-                loading="lazy"
-              />
-            </a>
-          </div>
+          <a href="">
+            <img
+              src="../../assets/images/message.svg"
+              alt="chat"
+              width="23"
+              height="23"
+              loading="lazy"
+            />
+          </a>
+          <a href="">
+            <img
+              src="../../assets/images/mail.svg"
+              alt="chat"
+              width="23"
+              height="23"
+              loading="lazy"
+            />
+          </a>
+          <a href="">
+            <img
+              src="../../assets/images/task.svg"
+              alt="chat"
+              width="23"
+              height="23"
+              loading="lazy"
+            />
+          </a>
         </div>
         <div
-          class="header__page d-flex justify-content-between align-items-start flex-row flex-wrap w-100"
+          class="left__btns d-flex justify-content-start flex-row align-items-center"
         >
-          <div class="title_page">
-            <h2>إضافة تعليق إلى طالب</h2>
-            <nav>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href=""><i class="mdi mdi-home-outline"></i> الرئيسية </a>
-                </li>
-                <li class="breadcrumb-item" aria-current="page">
-                  القسم الإداري
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  الطلاب
-                </li>
-              </ol>
-            </nav>
+          <a href="">
+            <img
+              src="../../assets/images/mirroring-screen.svg"
+              alt="chat"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
+          </a>
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">
+              <img src="../../assets/images/search-md.svg" alt="search" width="20" height="20" loading="lazy"/>
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="بحث"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <a href="">
+            <img
+              src="../../assets/images/notification.svg"
+              alt="chat"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
+          </a>
+          <a href="">
+            <img
+              src="../../assets/images/profile.svg"
+              alt="chat"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
+          </a>
+          <a href="">
+            <img
+              src="../../assets/images/setting.svg"
+              alt="chat"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="header__page d-flex justify-content-between align-items-start flex-row flex-wrap w-100"
+      >
+        <div class="title_page">
+          <h2>الحساب الشخصي </h2>
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href=""><i class="mdi mdi-home-outline"></i> الرئيسية </a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                القسم الإداري
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                الحساب الشخصي 
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="__details w-100">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> الإسم الأول </p>
+              <span> أحمد </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> الإسم الثاني </p>
+              <span> يسري </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> رقم الجوال </p>
+              <span> 0123453789 </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> رقم جوال  بديل</p>
+              <span> 0123453789 </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> البريد الألكتروني </p>
+              <span> Email@gmail.com </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> المرحلة </p>
+              <span> مرحلة 1 </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> المادة </p>
+              <span> مادة 1 </span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> الوصف </p>
+              <span> لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه </span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-start align-items-start flex-column gap-2 mb-5">
+              <p> الصورة الشخصية </p>
+              <img src="../../assets/images/avatar.png" alt="avatar" width="120" height="120">
+            </div>
+          </div>
           </div>
         </div>
-        <div class="w-100 replay__messages"> 
-          <span> تعليق </span>
-          <form action="" class="w-100 mt-4">
-              <textarea name="" id="" class="w-100" cols="50" row="100" style="height:200px"></textarea>
-              <button> إرسال </button>
-          </form>
-      </div>
       </div>
     </div>
 
@@ -256,7 +307,7 @@
 
     <script>
       $(document).ready(function () {
-        var table = $("#example").DataTable({
+        var table = $("#commentsTable").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
             "<'row'<'col-sm-12 table_layout'tr>>" +
