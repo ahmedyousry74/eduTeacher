@@ -80,9 +80,7 @@
                       <a href="../table/table.html"> برنامج الدوام </a>
                     </li>
                     <li>
-                      <a href="../helpers-files/files.html">
-                        الملفات المساعدة
-                      </a>
+                      <a href="../helpers-files/files.html"> الملفات المساعدة </a>
                     </li>
                     <li>
                       <a href="../comments/comments.html"> التعليقات </a>
@@ -91,9 +89,7 @@
                       <a href="../questions-bank/bank.html"> بنك الأسئلة </a>
                     </li>
                     <li>
-                      <a href="../messages/messages.html" class="active">
-                        رسائل الطلاب
-                      </a>
+                      <a href="../messages/messages.html" class="active"> رسائل الطلاب </a>
                     </li>
                     <li>
                       <a href="../exams/exams.html"> الأختبارات </a>
@@ -184,13 +180,7 @@
             </a>
             <div class="input-group">
               <span class="input-group-text" id="basic-addon1">
-                <img
-                  src="../../assets/images/search-md.svg"
-                  alt="search"
-                  width="20"
-                  height="20"
-                  loading="lazy"
-                />
+                <img src="../../assets/images/search-md.svg" alt="search" width="20" height="20" loading="lazy"/>
               </span>
               <input
                 type="text"
@@ -249,40 +239,12 @@
             </nav>
           </div>
         </div>
-        <div class="">
-          <table id="messagesTable" class="display" style="width: 100%">
-            <thead>
-              <tr>
-                <th>اسم الطالب</th>
-                <th>صورة الطالب</th>
-                <th>تاريخ الإرسال</th>
-                <th>الرسالة</th>
-                <th>الرد على الرسالة</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>أحمد يسري</td>
-                <td>
-                  <img
-                    src="../../assets/images/avatar.png"
-                    alt="avatar"
-                    height="70"
-                    width="70"
-                  />
-                </td>
-                <td>27-11-2020</td>
-                <td>
-                    لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على
-                    العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم
-                    مطبوعه
-                </td>
-                <td class="actions_">
-                  <a href="./replay-messages.html"> <img src="../../assets/images/message-plus-circle.svg" alt="replay message"> </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="w-100 replay__messages"> 
+            <span> الرسالة </span>
+            <form action="" class="w-100 mt-4">
+                <textarea name="" id="" class="w-100" cols="50" row="100" style="height:200px"></textarea>
+                <button> إرسال </button>
+            </form>
         </div>
       </div>
     </div>
@@ -291,9 +253,10 @@
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/datatable.js"></script>
 
+
     <script>
       $(document).ready(function () {
-        var table = $("#messagesTable").DataTable({
+        var table = $("#example").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
             "<'row'<'col-sm-12 table_layout'tr>>" +
@@ -320,28 +283,25 @@
       });
     </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const operationBtn = document.querySelector(".operation_");
-        const operationsBtns = document.querySelector(".operations__btns");
-
-        // Show/Hide operations__btns when clicking operation_ button
-        operationBtn.addEventListener("click", function (event) {
-          operationsBtns.style.display =
-            operationsBtns.style.display === "block" ? "none" : "block";
-          event.stopPropagation();
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const operationBtn = document.querySelector('.operation_');
+          const operationsBtns = document.querySelector('.operations__btns');
+        
+          // Show/Hide operations__btns when clicking operation_ button
+          operationBtn.addEventListener('click', function(event) {
+            operationsBtns.style.display = (operationsBtns.style.display === 'block') ? 'none' : 'block';
+            event.stopPropagation();
+          });
+        
+          // Hide operations__btns when clicking outside of it
+          document.addEventListener('click', function(event) {
+            const isClickInside = operationsBtns.contains(event.target) || operationBtn.contains(event.target);
+            if (!isClickInside) {
+              operationsBtns.style.display = 'none';
+            }
+          });
         });
-
-        // Hide operations__btns when clicking outside of it
-        document.addEventListener("click", function (event) {
-          const isClickInside =
-            operationsBtns.contains(event.target) ||
-            operationBtn.contains(event.target);
-          if (!isClickInside) {
-            operationsBtns.style.display = "none";
-          }
-        });
-      });
-    </script>
+      </script>
   </body>
 </html>

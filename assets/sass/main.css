@@ -313,6 +313,29 @@ p {
   font-weight: 500;
 }
 
+.replay__messages span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #050505;
+}
+.replay__messages button {
+  margin-top: 15px;
+  background: #DA3837;
+  border: 1px solid #DA3837;
+  padding: 8px 25px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  height: 40px;
+}
+
 aside {
   padding: 10px 20px;
   background-color: #F9FAFB;
