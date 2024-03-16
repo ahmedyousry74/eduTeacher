@@ -208,6 +208,9 @@ input[type="checkbox"]:checked {
     color: $second-color;
     border-color: $second-color;
 }
+p{
+    margin: 0 !important;
+}
 /////////////////////////////////
 .wrraper_page{
     padding: 15px 25px;
@@ -297,5 +300,18 @@ input[type="checkbox"]:checked {
                 }
             }
         }
+    }
+}
+///////////////////////////
+.teacher_details{
+    p{
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    span{
+        color: $fifth-color;
+        font-size: 15px;
+        font-weight: 500;
     }
 }

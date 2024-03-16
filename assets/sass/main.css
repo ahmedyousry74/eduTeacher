@@ -214,6 +214,10 @@ input[type=checkbox]:checked {
   border-color: #DA3837;
 }
 
+p {
+  margin: 0 !important;
+}
+
 .wrraper_page {
   padding: 15px 25px;
   gap: 32px;
@@ -296,6 +300,17 @@ input[type=checkbox]:checked {
   width: 100%;
   right: 0;
   top: 60px;
+}
+
+.teacher_details p {
+  color: #050505;
+  font-size: 18px;
+  font-weight: 600;
+}
+.teacher_details span {
+  color: #636363;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 aside {
