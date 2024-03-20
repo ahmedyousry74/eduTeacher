@@ -341,16 +341,11 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .login__page {
-    padding: 20px;
-  }
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .login__page:after {
   position: absolute;
@@ -362,7 +357,7 @@ p {
   width: 100%;
 }
 .login__page .login_form {
-  border-radius: 8px;
+  z-index: 9999;
   position: relative;
   z-index: 9999;
   display: flex;
@@ -373,6 +368,16 @@ p {
   width: 500px;
   background-color: #fff;
   padding: 15px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .login__page .login_form {
+    padding: 20px;
+  }
 }
 @media (max-width: 991px) {
   .login__page .login_form {
@@ -438,6 +443,31 @@ p {
   .login__page form {
     padding: 10px;
   }
+}
+.login__page .forget__pasword {
+  background-color: transparent;
+  color: #050505;
+  border: 0;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+.login__page .login__info {
+  margin-top: 150px;
+  padding: 0 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 70px;
+  position: relative;
+  z-index: 9999;
+}
+.login__page .login__info h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.6;
 }
 
 aside {
