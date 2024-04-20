@@ -470,6 +470,71 @@ p {
   line-height: 1.6;
 }
 
+button.add_ques, a.add_ques {
+  border: 1px solid #F9FAFB;
+  padding: 8px 25px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  height: 48px;
+  transition: 0.3s ease-in-out all;
+  background-color: #DA3837;
+  color: #F9FAFB;
+  border-color: #F9FAFB;
+}
+button.add_ques path, a.add_ques path {
+  color: #F9FAFB !important;
+  fill: #F9FAFB !important;
+}
+
+.list__questions h6 {
+  margin-bottom: 20px !important;
+  line-height: 2;
+}
+.list__questions p {
+  color: #050505;
+  font-weight: 600;
+  font-size: 20px;
+}
+.list__questions span {
+  color: #636363;
+  font-weight: 500;
+  font-size: 16px;
+}
+.list__questions span.active {
+  color: #DA3837;
+  font-weight: 600;
+}
+
+.modal.DeleteQuestion h6, .modal.EditQuestion h6 {
+  color: #050505;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+.modal.DeleteQuestion .modal-footer, .modal.EditQuestion .modal-footer {
+  border: 0;
+}
+.modal.DeleteQuestion button, .modal.EditQuestion button {
+  padding: 8px 15px;
+}
+.modal.DeleteQuestion button.save__, .modal.EditQuestion button.save__ {
+  color: #fff;
+  background-color: #DA3837;
+  border: 1px solid #DA3837;
+}
+.modal.DeleteQuestion button.close__, .modal.EditQuestion button.close__ {
+  background-color: transparent;
+  color: #050505;
+  border: 1px solid #050505;
+}
+
 aside {
   padding: 10px 20px;
   background-color: #F9FAFB;
