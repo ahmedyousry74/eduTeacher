@@ -535,6 +535,70 @@ button.add_ques path, a.add_ques path {
   border: 1px solid #050505;
 }
 
+input[name=correct_answer] {
+  width: 20px;
+  height: 20px;
+  accent-color: #DA3837;
+}
+
+#add_another_question_free, #add_another_question_list {
+  padding: 8px 25px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  height: 48px;
+  transition: 0.3s ease-in-out all;
+  background-color: transparent;
+  color: #050505;
+  border: 1px solid #050505;
+}
+
+.delete_question {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 25px;
+  color: red;
+  font-weight: bold;
+}
+
+.file__zone {
+  gap: 5px;
+  position: relative;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 8px !important;
+  padding: 16px;
+}
+.file__zone input {
+  width: 100%;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+.file__zone span {
+  color: #475467;
+  font-size: 14px;
+  font-weight: 400;
+}
+.file__zone span span {
+  color: #52911b;
+  font-weight: 700;
+}
+.file__zone p {
+  color: #475467;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 aside {
   padding: 10px 20px;
   background-color: #F9FAFB;
