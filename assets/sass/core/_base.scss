@@ -488,13 +488,20 @@ button.add_ques,a.add_ques{
 
 .list__questions{
     h6{
-        margin-bottom: 20px !important;
-        line-height: 2;
+        span{
+            margin-bottom: 20px !important;
+            line-height: 2;
+        }
     }
     p{
         color: $primary-color;
         font-weight: 600;
         font-size: 20px;
+        span{
+            color: $primary-color;
+            font-weight: 600;
+            font-size: 20px;
+        }
     }
     span{
         color: $fifth-color;
@@ -594,5 +601,32 @@ input[name='correct_answer']{
         color: #475467;
         font-size: 12px;
         font-weight: 400;
+    }
+}
+.list__questions{
+    .accordion-collapse.collapse.show{
+        display: flex;
+    }
+}
+.grade_bank{
+    margin-top: 15px;
+    span{
+        font-size: 13px;
+        font-weight: 500;
+        color: $fifth-color;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background-color: #636363;
+            width: 1px;
+            height: 25px;
+            right: 81px;
+        }
+        &:last-child{
+            &:after{
+                opacity: 0;
+            }
+        }
     }
 }

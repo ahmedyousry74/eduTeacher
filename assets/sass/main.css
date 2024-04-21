@@ -493,11 +493,16 @@ button.add_ques path, a.add_ques path {
   fill: #F9FAFB !important;
 }
 
-.list__questions h6 {
+.list__questions h6 span {
   margin-bottom: 20px !important;
   line-height: 2;
 }
 .list__questions p {
+  color: #050505;
+  font-weight: 600;
+  font-size: 20px;
+}
+.list__questions p span {
   color: #050505;
   font-weight: 600;
   font-size: 20px;
@@ -597,6 +602,31 @@ input[name=correct_answer] {
   color: #475467;
   font-size: 12px;
   font-weight: 400;
+}
+
+.list__questions .accordion-collapse.collapse.show {
+  display: flex;
+}
+
+.grade_bank {
+  margin-top: 15px;
+}
+.grade_bank span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #636363;
+  position: relative;
+}
+.grade_bank span::after {
+  position: absolute;
+  content: "";
+  background-color: #636363;
+  width: 1px;
+  height: 25px;
+  right: 81px;
+}
+.grade_bank span:last-child:after {
+  opacity: 0;
 }
 
 aside {
