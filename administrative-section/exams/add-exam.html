@@ -316,7 +316,7 @@
           </div>
           <div role="tab-list" class="tab-list">
             <form class="needs-validation">
-              <div role="tabpanel" id="details__tab" class="tabpanel w-100 hidden">
+              <div role="tabpanel" id="details__tab" class="tabpanel w-100">
                 <div class="row">
                   <div class="col-md-6">
                     <div
@@ -464,8 +464,8 @@
                   <button class="continue__btn">التالي</button>
                 </div>
               </div>
-              <div role="tabpanel" id="exam__tab" class="tabpanel">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <div role="tabpanel" id="exam__tab" class="tabpanel hidden">
+                <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <button
                       class="nav-link active"
@@ -1115,9 +1115,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-4 d-flex justify-content-center align-items-center flex-row">
+                    <button class="submit"> تأكيد </button>
+                </div>
               </div>
-              <div class="form__actions mt-5">
-                <button id="prev__btn" class="hidden">السابق</button>
+              <div class="form__actions mt-5 d-none">
+                <button id="prev__btn" class="">السابق</button>
               </div>
             </form>
           </div>
@@ -1138,9 +1141,9 @@
 
       previousButton.addEventListener("click", (event) => {
         event.preventDefault();
-        tabPanels[currentStep].classList.remove("hidden");
+        tabPanels[currentStep].classList.add("hidden");
         //   tabTargets[currentStep].classList.remove('active');
-        tabPanels[currentStep - 1].classList.add("hidden");
+        tabPanels[currentStep - 1].classList.remove("hidden");
         //   tabTargets[currentStep - 1].classList.add('active');
         currentStep -= 1;
         updateStatusDisplay();

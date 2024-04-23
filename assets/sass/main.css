@@ -1343,7 +1343,7 @@ aside .logout__ button path {
   width: 250px;
   max-width: 250px;
 }
-.add_exam_duty .continue__btn {
+.add_exam_duty .continue__btn, .add_exam_duty .submit {
   background-color: #DA3837;
   color: #fff;
   border-radius: 25px;
