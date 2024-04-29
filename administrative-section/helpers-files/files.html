@@ -80,7 +80,9 @@
                       <a href="../table/table.html"> برنامج الدوام </a>
                     </li>
                     <li>
-                      <a href="../helpers-files/files.html" class="active"> الملفات المساعدة </a>
+                      <a href="../helpers-files/files.html" class="active">
+                        الملفات المساعدة
+                      </a>
                     </li>
                     <li>
                       <a href="../comments/comments.html"> التعليقات </a>
@@ -96,6 +98,11 @@
                     </li>
                     <li>
                       <a href="../duties/duties.html"> الواجبات </a>
+                    </li>
+                    <li>
+                      <a href="../excercies/exercise.html" class="">
+                        التمارين
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -180,7 +187,13 @@
             </a>
             <div class="input-group">
               <span class="input-group-text" id="basic-addon1">
-                <img src="../../assets/images/search-md.svg" alt="search" width="20" height="20" loading="lazy"/>
+                <img
+                  src="../../assets/images/search-md.svg"
+                  alt="search"
+                  width="20"
+                  height="20"
+                  loading="lazy"
+                />
               </span>
               <input
                 type="text"
@@ -239,46 +252,48 @@
             </nav>
           </div>
           <div
-          class="actions_page d-flex justify-content-start align-otems-center flex-row gap-2 flex-wrap"
-        >
-          <button>
-            <img
-              src="../../assets/images/printer.svg"
-              alt="print"
-              width="20"
-              height="20"
-              loading="lazy"
-            />
-            <span>طباعة</span>
-          </button>
-          <button>
-            <img
-              src="../../assets/images/file.svg"
-              alt="print"
-              width="20"
-              height="20"
-              loading="lazy"
-            />
-            <span> تصدير إلى PDF </span>
-          </button>
-          <button>
-            <img
-              src="../../assets/images/download-cloud.svg"
-              alt="print"
-              width="20"
-              height="20"
-              loading="lazy"
-            />
-            <span> إستيراد </span>
-          </button>
-    
-        </div>
+            class="actions_page d-flex justify-content-start align-otems-center flex-row gap-2 flex-wrap"
+          >
+            <button>
+              <img
+                src="../../assets/images/printer.svg"
+                alt="print"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <span>طباعة</span>
+            </button>
+            <button>
+              <img
+                src="../../assets/images/file.svg"
+                alt="print"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <span> تصدير إلى PDF </span>
+            </button>
+            <button>
+              <img
+                src="../../assets/images/download-cloud.svg"
+                alt="print"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+              <span> إستيراد </span>
+            </button>
+          </div>
         </div>
         <div class="w-100">
           <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
-            <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
-              
-              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+            <div
+              class="d-flex justify-content-start align-items-center flex-row gap-3 w-100 flex-lg-nowrap flex-wrap"
+            >
+              <div
+                class="d-flex justify-content-start align-items-start flex-column gap-1"
+              >
                 <label for=""> المراحل الدراسية </label>
                 <select
                   name="class"
@@ -294,7 +309,9 @@
                   <option value="">مرحلة 4</option>
                 </select>
               </div>
-              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+              <div
+                class="d-flex justify-content-start align-items-start flex-column gap-1"
+              >
                 <label for=""> الصف الدراسي </label>
                 <select
                   name="class"
@@ -308,7 +325,9 @@
                   <option value="">صف 4</option>
                 </select>
               </div>
-              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+              <div
+                class="d-flex justify-content-start align-items-start flex-column gap-1"
+              >
                 <label for="">الشعبة </label>
                 <select
                   name="class"
@@ -322,7 +341,9 @@
                   <option value="">شعبة 4</option>
                 </select>
               </div>
-              <div class="d-flex justify-content-start align-items-start flex-column gap-1">
+              <div
+                class="d-flex justify-content-start align-items-start flex-column gap-1"
+              >
                 <label for="">المادة </label>
                 <select
                   name="class"
@@ -338,7 +359,7 @@
               </div>
             </div>
             <div class="filter_btn">
-              <button type="submit"> فلتر </button>
+              <button type="submit">فلتر</button>
             </div>
           </form>
           <table id="helpersTable" class="display" style="width: 100%">
@@ -360,8 +381,16 @@
                 <td>صف دراسي 1</td>
                 <td>شعبة 1</td>
                 <td class="actions">
-                  <button > <img src="../../assets/images/download.svg" alt="trash" width="24" height="24" loading="lazy"> </button>
-                </td>                        
+                  <button>
+                    <img
+                      src="../../assets/images/download.svg"
+                      alt="trash"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                    />
+                  </button>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -372,7 +401,6 @@
     <script src="../../assets/js/jquery.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/datatable.js"></script>
-
 
     <script>
       $(document).ready(function () {
@@ -403,25 +431,28 @@
       });
     </script>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const operationBtn = document.querySelector('.operation_');
-          const operationsBtns = document.querySelector('.operations__btns');
-        
-          // Show/Hide operations__btns when clicking operation_ button
-          operationBtn.addEventListener('click', function(event) {
-            operationsBtns.style.display = (operationsBtns.style.display === 'block') ? 'none' : 'block';
-            event.stopPropagation();
-          });
-        
-          // Hide operations__btns when clicking outside of it
-          document.addEventListener('click', function(event) {
-            const isClickInside = operationsBtns.contains(event.target) || operationBtn.contains(event.target);
-            if (!isClickInside) {
-              operationsBtns.style.display = 'none';
-            }
-          });
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const operationBtn = document.querySelector(".operation_");
+        const operationsBtns = document.querySelector(".operations__btns");
+
+        // Show/Hide operations__btns when clicking operation_ button
+        operationBtn.addEventListener("click", function (event) {
+          operationsBtns.style.display =
+            operationsBtns.style.display === "block" ? "none" : "block";
+          event.stopPropagation();
         });
-      </script>
+
+        // Hide operations__btns when clicking outside of it
+        document.addEventListener("click", function (event) {
+          const isClickInside =
+            operationsBtns.contains(event.target) ||
+            operationBtn.contains(event.target);
+          if (!isClickInside) {
+            operationsBtns.style.display = "none";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
