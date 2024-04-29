@@ -284,15 +284,18 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-.certificate__layout .certificate__signture .certificate__right, .certificate__layout .certificate__signture .certificate__left {
+.certificate__layout .certificate__signture .certificate__right,
+.certificate__layout .certificate__signture .certificate__left {
   position: relative;
 }
-.certificate__layout .certificate__signture .certificate__right span, .certificate__layout .certificate__signture .certificate__left span {
+.certificate__layout .certificate__signture .certificate__right span,
+.certificate__layout .certificate__signture .certificate__left span {
   color: #050505;
   font-size: 24px;
   font-weight: 600;
 }
-.certificate__layout .certificate__signture .certificate__right span:after, .certificate__layout .certificate__signture .certificate__left span:after {
+.certificate__layout .certificate__signture .certificate__right span:after,
+.certificate__layout .certificate__signture .certificate__left span:after {
   position: absolute;
   content: "";
   background-color: #636363;
@@ -387,7 +390,8 @@ p {
 .login__page form {
   padding: 15px;
 }
-.login__page form input, .login__page form select {
+.login__page form input,
+.login__page form select {
   border-radius: 4px;
   width: 220px;
   height: 40px;
@@ -398,11 +402,13 @@ p {
   color: #050505;
   border-right: 0;
 }
-.login__page form input:focus, .login__page form select:focus {
+.login__page form input:focus,
+.login__page form select:focus {
   box-shadow: none;
   border-color: #DBDBDB;
 }
-.login__page form input option, .login__page form select option {
+.login__page form input option,
+.login__page form select option {
   font-size: 14px;
   margin-bottom: 10px;
   color: #050505;
@@ -411,7 +417,8 @@ p {
   font-size: 14px;
   color: #050505;
 }
-.login__page form input::placeholder, .login__page form select::placeholder {
+.login__page form input::placeholder,
+.login__page form select::placeholder {
   font-size: 14px;
   color: #050505;
 }
@@ -423,7 +430,8 @@ p {
   font-size: 15px;
   font-weight: 500;
 }
-.login__page form button, .login__page form a {
+.login__page form button,
+.login__page form a {
   background: #DA3837;
   border: 1px solid #DA3837;
   padding: 8px 25px;
@@ -470,7 +478,8 @@ p {
   line-height: 1.6;
 }
 
-button.add_ques, a.add_ques {
+button.add_ques,
+a.add_ques {
   border: 1px solid #F9FAFB;
   padding: 8px 25px;
   border-radius: 6px;
@@ -488,7 +497,8 @@ button.add_ques, a.add_ques {
   color: #F9FAFB;
   border-color: #F9FAFB;
 }
-button.add_ques path, a.add_ques path {
+button.add_ques path,
+a.add_ques path {
   color: #F9FAFB !important;
   fill: #F9FAFB !important;
 }
@@ -546,7 +556,8 @@ input[name=correct_answer] {
   accent-color: #DA3837;
 }
 
-#add_another_question_free, #add_another_question_list {
+#add_another_question_free,
+#add_another_question_list {
   padding: 8px 25px;
   border-radius: 6px;
   display: flex;
@@ -627,6 +638,30 @@ input[name=correct_answer] {
 }
 .grade_bank span:last-child:after {
   opacity: 0;
+}
+
+.add__note {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 15px;
+  background-color: #DA3837;
+  color: #fff;
+  border-radius: 8px;
+  width: auto !important;
+  padding: 8px 12px;
+  float: left;
+}
+
+.add__note__div {
+  position: relative;
+}
+
+.delete__note {
+  position: absolute;
+  top: 5px;
+  left: 20px;
 }
 
 aside {
