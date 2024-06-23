@@ -664,6 +664,45 @@ input[name=correct_answer] {
   left: 20px;
 }
 
+.btn.button-offcanvas-dash {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .login__page {
+    background-image: none !important;
+  }
+  .login__info {
+    display: none !important;
+  }
+  .filter__action > div {
+    overflow-x: scroll !important;
+  }
+  .dt-container.dt-empty-footer {
+    margin-top: 0;
+  }
+  .search_ {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+  .length_ {
+    display: none !important;
+  }
+  .btn.button-offcanvas-dash {
+    display: block;
+  }
+}
+.offcanvas.offcanvas-end .offcanvas-body {
+  padding: 0;
+}
+.offcanvas.offcanvas-end aside {
+  width: 100% !important;
+}
+.offcanvas.offcanvas-end aside a {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
 aside {
   padding: 10px 20px;
   background-color: #F9FAFB;

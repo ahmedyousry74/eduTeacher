@@ -378,7 +378,7 @@
             </div>
             <div class="tab-pane fade" id="pills-exams" role="tabpanel" aria-labelledby="pills-exams-tab" tabindex="0">
                 <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
-                    <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
+                    <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap">
                       <div class="d-flex justify-content-start align-items-start flex-column gap-1">
                         <label for=""> المادة </label>
                         <select
@@ -477,7 +477,7 @@
             </div>
             <div class="tab-pane fade" id="pills-duties" role="tabpanel" aria-labelledby="pills-duties-tab" tabindex="0">
                 <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
-                    <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
+                    <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap">
                       <div class="d-flex justify-content-start align-items-start flex-column gap-1">
                         <label for=""> المادة </label>
                         <select
@@ -576,7 +576,7 @@
             </div>
             <div class="tab-pane fade" id="pills-audience" role="tabpanel" aria-labelledby="pills-audience-tab" tabindex="0">
                 <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2">
-                    <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
+                    <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap">
                       <div class="d-flex justify-content-start align-items-start flex-column gap-1">
                         <label for=""> تاريخ البدء </label>
                         <input type="date" class="form-control">
@@ -651,6 +651,7 @@
 
     <script>
       $(document).ready(function () {
+        var isSmallScreen = $(window).width() <= 500;
         var table = $("#gradeTable").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
@@ -661,6 +662,7 @@
             [5, 10, 25, 50, "All"],
           ],
           responsive: true,
+scrollX: true, 
           language: {
             search: "_INPUT_",
             searchPlaceholder: "بحث",
@@ -675,10 +677,16 @@
         });
         $(".dataTables_filter input").addClass("form-control");
         $(".dataTables_length select").addClass("form-select");
+        $(window).resize(function () {
+          if ($(window).width() <= 500) {
+            table.columns.adjust().draw();
+          }
+        });
       });
     </script>
     <script>
       $(document).ready(function () {
+        var isSmallScreen = $(window).width() <= 500;
         var table = $("#examsTable").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
@@ -689,6 +697,7 @@
             [5, 10, 25, 50, "All"],
           ],
           responsive: true,
+scrollX: true, 
           language: {
             search: "_INPUT_",
             searchPlaceholder: "بحث",
@@ -703,10 +712,16 @@
         });
         $(".dataTables_filter input").addClass("form-control");
         $(".dataTables_length select").addClass("form-select");
+        $(window).resize(function () {
+          if ($(window).width() <= 500) {
+            table.columns.adjust().draw();
+          }
+        });
       });
     </script>
     <script>
       $(document).ready(function () {
+        var isSmallScreen = $(window).width() <= 500;
         var table = $("#dutiesTable").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
@@ -717,6 +732,7 @@
             [5, 10, 25, 50, "All"],
           ],
           responsive: true,
+scrollX: true, 
           language: {
             search: "_INPUT_",
             searchPlaceholder: "بحث",
@@ -731,10 +747,16 @@
         });
         $(".dataTables_filter input").addClass("form-control");
         $(".dataTables_length select").addClass("form-select");
+        $(window).resize(function () {
+          if ($(window).width() <= 500) {
+            table.columns.adjust().draw();
+          }
+        });
       });
     </script>
     <script>
       $(document).ready(function () {
+        var isSmallScreen = $(window).width() <= 500;
         var table = $("#audienceTable").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
@@ -745,6 +767,7 @@
             [5, 10, 25, 50, "All"],
           ],
           responsive: true,
+scrollX: true, 
           language: {
             search: "_INPUT_",
             searchPlaceholder: "بحث",
@@ -759,6 +782,11 @@
         });
         $(".dataTables_filter input").addClass("form-control");
         $(".dataTables_length select").addClass("form-select");
+        $(window).resize(function () {
+          if ($(window).width() <= 500) {
+            table.columns.adjust().draw();
+          }
+        });
       });
     </script>
 

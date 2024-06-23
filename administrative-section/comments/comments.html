@@ -312,6 +312,7 @@
 
     <script>
       $(document).ready(function () {
+        var isSmallScreen = $(window).width() <= 500;
         var table = $("#commentsTable").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
@@ -322,6 +323,7 @@
             [5, 10, 25, 50, "All"],
           ],
           responsive: true,
+scrollX: true, 
           language: {
             search: "_INPUT_",
             searchPlaceholder: "بحث",
@@ -336,6 +338,11 @@
         });
         $(".dataTables_filter input").addClass("form-control");
         $(".dataTables_length select").addClass("form-select");
+        $(window).resize(function () {
+          if ($(window).width() <= 500) {
+            table.columns.adjust().draw();
+          }
+        });
       });
     </script>
 

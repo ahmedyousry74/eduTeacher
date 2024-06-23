@@ -317,7 +317,7 @@
           </a>
         </div>
         <form class="filter__action w-100 flex-lg-nowrap flex-wrap gap-2" id="accordionExample">
-          <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap flex-wrap">
+          <div class="d-flex justify-content-start align-items-center flex-row gap-3 w-100  flex-lg-nowrap">
             <div class="d-flex justify-content-start align-items-start flex-column gap-1">
               <label for=""> المراحل الدراسية </label>
               <select
@@ -581,6 +581,7 @@
 
     <script>
       $(document).ready(function () {
+        var isSmallScreen = $(window).width() <= 500;
         var table = $("#example").DataTable({
           dom:
             "<'row'<'col-sm-12 col-md-6 length_'l><'col-sm-12 col-md-6 search_'f>>" +
@@ -591,6 +592,7 @@
             [5, 10, 25, 50, "All"],
           ],
           responsive: true,
+scrollX: true, 
           language: {
             search: "_INPUT_",
             searchPlaceholder: "بحث",
@@ -605,6 +607,11 @@
         });
         $(".dataTables_filter input").addClass("form-control");
         $(".dataTables_length select").addClass("form-select");
+        $(window).resize(function () {
+          if ($(window).width() <= 500) {
+            table.columns.adjust().draw();
+          }
+        });
       });
     </script>
 
