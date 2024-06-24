@@ -763,3 +763,69 @@ input[name='correct_answer'] {
         }
     }
 }
+
+/* start notification menu */
+.notification-menu{
+    position: absolute;
+    top: 86px;
+    width: 350px;
+    text-align: start;
+    padding: 10px;
+    max-height:250px;
+    overflow-y: scroll;
+    z-index: 99999999;
+    padding: 25px;
+    padding: 8px !important;
+    height: 250px;
+    @media(max-width: 580px){
+        width: 100%;
+    }
+}
+  .notification-menu h6{
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom:15px
+  }
+  .notification-menu li{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 7px 0;
+  }
+  .notification-menu li::after{
+    position: absolute;
+    content:"";
+    height:1px;
+    width:100%;
+    background-color: var(--primary-color);
+  }
+  .notification-menu li p{
+    color: #8f8e8e;
+    font-size: 12px;
+  }
+  .offcanvas-body{
+      .links__aside{
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            a{
+                padding: 0;
+            }
+        }
+      }
+  }
+
+  .right__btns{
+      .dropdown-toggle::after {
+        display: none !important
+    }
+  }

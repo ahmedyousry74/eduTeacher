@@ -39,6 +39,12 @@
           </div>
         </div>
         <div class="links__aside">
+
+          <ul class="p-0">
+          <li> 
+            <a href="../../home.html" style="color: #505050;"> <img src="../../assets/images/home.svg" alt="" style="margin-inline-end: 5px;"> الصفحة الرئيسية </a>
+          </li>
+      </ul>
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -252,6 +258,12 @@
                   </div>
                 </div>
                 <div class="links__aside">
+
+          <ul class="p-0">
+          <li> 
+            <a href="../../home.html" style="color: #505050;"> <img src="../../assets/images/home.svg" alt="" style="margin-inline-end: 5px;"> الصفحة الرئيسية </a>
+          </li>
+      </ul>
                   <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
@@ -490,7 +502,24 @@
 
     <script src="../../assets/js/jquery.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/datatable.js"></script>
+        <script src="../../assets/js/datatable.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const dropdownButton = document.getElementById('dropdownMenuButton1');
+          const dropdownMenu = document.querySelector('.notification-menu');
+
+          dropdownButton.addEventListener('click', function(event) {
+              event.stopPropagation();
+              dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+          });
+
+          document.addEventListener('click', function(event) {
+              if (!dropdownMenu.contains(event.target) && !dropdownButton.contains(event.target)) {
+                  dropdownMenu.style.display = 'none';
+              }
+          });
+      });
+  </script>
 
 
     <script>

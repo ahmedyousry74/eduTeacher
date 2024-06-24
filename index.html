@@ -19,6 +19,7 @@
       style="background-image: url('./assets/images/header2.webp')"
     >
       <div class="login_form">
+        <img src="./assets/images/logo.png" alt="logo" width="100" height="100">
         <form action="" class="w-100 d-flex justify-content-start align-items-start flex-column gap-3">
           <div class="d-flex justify-content-start align-items-start flex-column gap-2 w-100">
             <label for=""> البريد الألكتروني </label>
@@ -42,14 +43,30 @@
         </form>
       </div>
       <div class="login__info">
-        <img src="./assets/images/logo.png" alt="logo" width="100" height="100">
         <h1>اهلا بكم <br> سجل الاّن وتابع كل جديد في لوحة التحكم</h1>
       </div>
     </div>
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/datatable.js"></script>
+        <script src="../../assets/js/datatable.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const dropdownButton = document.getElementById('dropdownMenuButton1');
+          const dropdownMenu = document.querySelector('.notification-menu');
+
+          dropdownButton.addEventListener('click', function(event) {
+              event.stopPropagation();
+              dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+          });
+
+          document.addEventListener('click', function(event) {
+              if (!dropdownMenu.contains(event.target) && !dropdownButton.contains(event.target)) {
+                  dropdownMenu.style.display = 'none';
+              }
+          });
+      });
+  </script>
 
   </body>
 </html>
