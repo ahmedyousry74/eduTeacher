@@ -723,6 +723,9 @@ input[name='correct_answer'] {
     display: none;
 }
 @media(max-width: 991px) {
+    .right__btns{
+        width: 100%;
+    }
     .login__page{
         background-image: none !important;
     }
